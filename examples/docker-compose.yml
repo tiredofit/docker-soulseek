@@ -1,0 +1,24 @@
+version: '2.4'
+services:
+
+  soulseek-app:
+    image: tiredofit/soulseek:latest
+    container_name: soulseek-app
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.soulseek-app.rule=Host(`soulseek.example.com`)
+      - traefik.http.services.soulseek-app.loadbalancer.server.port=80
+    volumes:
+      - ./data:/data
+    environment:
+      - CONTAINER_NAME=soulseek-app
+      - CONTAINER_LOG_LEVEL=INFO
+      - USER_APP=1000
+      - GROUP_APP=1000
+    networks:
+      - proxy
+    restart: always
+
+networks:
+  proxy:
+    external: true
