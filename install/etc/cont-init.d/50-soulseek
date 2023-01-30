@@ -5,6 +5,7 @@ PROCESS_NAME="soulseek"
 
 prepare_service
 
+mkdir -p /data
 chown -f -R ${APP_USER}:${APP_USER} /data
 
 liftoff

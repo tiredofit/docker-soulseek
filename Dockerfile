@@ -16,4 +16,4 @@ RUN set -x && \
 
 EXPOSE 6080 5900
 
-ADD install/ /
+COPY install/ /

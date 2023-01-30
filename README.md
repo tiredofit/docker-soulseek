@@ -2,7 +2,7 @@
 
 
 [![GitHub release](https://img.shields.io/github/v/tag/tiredofit/docker-soulseek?style=flat-square)](https://github.com/tiredofit/docker-soulseek/releases/latest)
-[![Build Status](https://img.shields.io/github/workflow/status/tiredofit/docker-soulseek/build?style=flat-square)](https://github.com/tiredofit/docker-soulseek/actions?query=workflow%3Abuild)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/tiredofit/docker-soulseek/main.yml?branch=main&style=flat-square)](https://github.com/tiredofit/docker-soulseek/actions)
 [![Docker Stars](https://img.shields.io/docker/stars/tiredofit/soulseek.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/tiredofit/soulseek/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/tiredofit/soulseek.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/tiredofit/soulseek/)
 [![Become a sponsor](https://img.shields.io/badge/sponsor-tiredofit-181717.svg?logo=github&style=flat-square)](https://github.com/sponsors/tiredofit)
@@ -68,7 +68,7 @@ The following image tags are available along with their tagged release based on 
 docker pull tiredofit/soulseek:(imagetag)
 ```
 #### Multi Architecture
-Images are built primarily for `amd64` architecture, and may also include builds for `arm/v6`, `arm/v7`, `arm64` and others. These variants are all unsupported. Consider [sponsoring](https://github.com/sponsors/tiredofit) my work so that I can work with various hardware. To see if this image supports multiple architecures, type `docker manifest (image):(tag)`
+Images are built primarily for `amd64` architecture, and may also include builds for `arm/v7`, `arm64` and others. These variants are all unsupported. Consider [sponsoring](https://github.com/sponsors/tiredofit) my work so that I can work with various hardware. To see if this image supports multiple architecures, type `docker manifest (image):(tag)`
 
 ## Configuration
 
